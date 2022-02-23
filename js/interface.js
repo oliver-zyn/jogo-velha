@@ -11,10 +11,10 @@ function handleClick(event) {
 
   if (handleMove(position)) {
     setTimeout(() => {
-      if (playerTime != 0) {
-        alert("O Jogo Acabou - O Vencedor foi o jogador X");
-      } else if (playerTime != 1) {
+      if (playerTime == 0) {
         alert("O Jogo Acabou - O Vencedor foi o jogador O");
+      } else if (playerTime == 1) {
+        alert("O Jogo Acabou - O Vencedor foi o jogador X");
       }
     }, 10);
   }
